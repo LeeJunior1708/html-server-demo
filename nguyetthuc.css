@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+    /* position: fixed; */
+.nav{
+    background: #474747;
+    display: flex;
+    height: 3em;
+    line-height: 3em;
+    justify-content: space-between;
+}
+
+.main-menu{
+    display: flex;
+}
+
+.main-menu li{
+    padding-right: 2em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-menu li a:hover{
+    color: rgb(195, 0, 255);
+    transition: color 0.2s ease-out;
+}
+
+#sub-menu-1{
+    background: #474747;
+    width: 240px;
+    height: 6em;
+    line-height: 3em;
+    margin: 0px auto;
+    position: absolute;
+    display: none;
+    top: 50px;
+}
+
+.menu-link:hover #sub-menu-1{
+    display: block;
+}
+
+#sub-menu-2{
+    background:#474747;
+    width: 240px;
+    height: 18em;
+    line-height: 3em;
+    margin: 0px auto;
+    position: absolute;
+    display: none;
+    top: 50px;
+}
+
+.menu-link:hover #sub-menu-2{
+    display: block;
+}
+
+.sub-menu li{
+    text-align: left;
+    padding-left: 15px;
+}
+
+#logo{
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+img{
+    margin-bottom: 1.5rem;
+}
+
+
+#banner{
+    background: url(images/background-1.jpg);
+    min-height: 480px;
+    width: 100%;
+}
+
+.container{
+    margin: 0px auto;
+    max-width: 1000px;
+}
+
+#content h1{
+    padding: 40px 0px;
+    font-size: 50px;
+    color:#ac81fc;
+}
+
+#content p{
+    text-overflow:clip;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+#content p b{
+    font-size: 24px;
+    color:#cf81fc;
+}
+
+#quang-cao{
+    padding: auto;
+    border-radius: 0.5rem;
+    width: 1000px;
+    height: 200px;
+    background: #ffffff7c;
+}
+
+#footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.692);
+    width: 100%;
+    height: auto;
+    color: white;
+}

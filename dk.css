@@ -1,0 +1,17 @@
+#layout-dk{
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    width: 100%;
+}
+.active{background-color: red;}
+.container{
+    margin-top: 100px;
+    width: 50%;
+    height: 500px;
+}
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}

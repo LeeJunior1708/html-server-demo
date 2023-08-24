@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Máy tính</title>
+    <script src="maytinh.js"></script>
+    <link rel="stylesheet" href="maytinh.css">
+    <link rel="stylesheet" href="dinhcss.css">
+    <script>
+        function xulimenu(){
+            if (document.getElementById("menu").style.display=="block"){
+                document.getElementById("menu").style.display="none";
+                
+            }
+            else {
+                document.getElementById("menu").style.display="block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="divmenu">
+        <div><img src="cusc.png" alt=""></div>
+        <div>
+        <div class="mini"><input type="button" value="&#8801;" id="btnmenu" onclick="xulimenu()"></div>
+        <div id="menu">
+            <ul class="menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><font color="white">Giới thiệu</font>
+                    <ul class="sub-menu">
+                        <li><a href="web.html">Về Website</a></li>
+                        <li><a href="team.html">Về team kiến tạo</a></li>
+                    </ul>
+                </li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><font color="white">Nội dung</font>
+                    <ul class="sub-menu">
+                        <li><a href="bigbang.html">Vụ Nổ Big Bang</a></li>
+                        <li><a href="hoden.html">Hố Đen Vũ Trụ</a></li>
+                        <li><a href="cucquang.html">Cực Quang</a></li>
+                        <li><a href="saobang.html">Sao Băng</a></li>
+                        <li><a href="nhatthuc.html">Nhật Thực</a></li>
+                        <li><a href="nguyetthuc.html">Nguyệt Thực</a></li>
+                    </ul>
+                </li>
+                <li><a href="gopy.html">Góp ý</a></li>
+                <li><a href="game.html">Giải trí</a></li>
+                <li id="now"><font color="white">Công cụ</font>
+                    <ul class="sub-menu">
+                        <li><a href="maytinh.html">Máy tính</a></li>
+                        <li><a href="doidonvi.html">Đổi đơn vị</a></li>
+                    </ul>
+                </li>
+                <li><a href="dk.html">Đăng kí/Đăng nhập</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <header >
+        <p>Khám Phá Thiên Văn <br><i>Máy tính</i></p>
+    </header>
+    
+    <div class="main"> 
+        <form action="">
+            <table align="center" cellpadding="10px">
+                <tr>
+                    <td><input type="text" name="so1" id="so1" placeholder="Nhập số thứ 1" onkeyup="xuly()"></td>
+                    <td><input type="text" name="so2" id="so2" placeholder="Nhập số thứ 2" onkeyup="xuly()"></td>
+                </tr>
+                <tr>
+                    <td>Kết quả phép cộng(+):</td>
+                    <td><input type="text" name="cong" id="cong" readonly></td>
+                </tr>  
+                <tr>
+                    <td>Kết quả phép trừ(-):</td>
+                    <td><input type="text" name="tru" id="tru" readonly></td>
+                </tr>  
+                <tr>
+                    <td>Kết quả phép nhân(*):</td>
+                    <td><input type="text" name="nhan" id="nhan" readonly></td>
+                </tr>  
+                <tr>
+                    <td>Kết quả phép chia(/):</td>
+                    <td><input type="text" name="chia" id="chia" readonly></td>
+                </tr>  
+                <tr>
+                    <td>Kết quả phép chia lấy dư(%):</td>
+                    <td><input type="text" name="chiadu" id="chiadu" readonly></td>
+                </tr>            
+            </table>
+        </form>
+    </div>
+
+    <div class="clear"></div>
+    <footer>
+        <h2>Chủ Đề Thiên Văn</h2>
+        <p>Lớp: CP2196J07</p>
+        <p>Nhóm thực hiện</p>
+        <p><i>Trịnh Hoàng Duy</i></p>
+        <p><i>Lý Minh Nghĩa</i></p>
+        <p><i>Trương Thượng Hoài Nghĩa</i></p>
+    </footer>
+</body>
+</html>

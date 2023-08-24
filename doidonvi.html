@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Đổi đơn vị</title>
+    <script src="doidonvi.js"></script>
+    <link rel="stylesheet" href="doidonvi.css">
+    <link rel="stylesheet" href="dinhcss.css">
+    <script>
+        function xulimenu(){
+            if (document.getElementById("menu").style.display=="block"){
+                document.getElementById("menu").style.display="none";
+                
+            }
+            else {
+                document.getElementById("menu").style.display="block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="divmenu">
+    <div><img src="cusc.png" alt=""></div>
+    <div>
+    <div class="mini"><input type="button" value="&#8801;" id="btnmenu" onclick="xulimenu()"></div>
+    <div id="menu">
+        <ul class="menu">
+            <li><a href="trangchu.html">Trang chủ</a></li>
+            <li><font color="white">Giới thiệu</font>
+                <ul class="sub-menu">
+                    <li><a href="web.html">Về Website</a></li>
+                    <li><a href="team.html">Về team kiến tạo</a></li>
+                </ul>
+            </li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li><font color="white">Nội dung</font>
+                <ul class="sub-menu">
+                    <li><a href="bigbang.html">Vụ Nổ Big Bang</a></li>
+                    <li><a href="hoden.html">Hố Đen Vũ Trụ</a></li>
+                    <li><a href="cucquang.html">Cực Quang</a></li>
+                    <li><a href="saobang.html">Sao Băng</a></li>
+                    <li><a href="nhatthuc.html">Nhật Thực</a></li>
+                    <li><a href="nguyetthuc.html">Nguyệt Thực</a></li>
+                </ul>
+            </li>
+            <li><a href="gopy.html">Góp ý</a></li>
+            <li><a href="game.html">Giải trí</a></li>
+            <li id="now"><font color="white">Công cụ</font>
+                <ul class="sub-menu">
+                    <li><a href="maytinh.html">Máy tính</a></li>
+                    <li><a href="doidonvi.html">Đổi đơn vị</a></li>
+                </ul>
+            </li>
+            <li><a href="dk.html">Đăng kí/Đăng nhập</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+    
+    <header >
+        <p>Khám Phá Thiên Văn <br><i>Đổi đơn vị</i></p>
+    </header>
+    <div class="main">
+        <form action="">
+            <table align="center">
+                <tr>
+                    <td colspan="2" align="left"><font color="red"><b>Đổi độ dài:</b></font></td>
+                </tr>
+                <tr>
+                    <td>Kilomet: </td>
+                    <td><input type="text" name="km" id="km" onkeyup="xlkm()" value="0"> Km</td>
+                </tr>
+                <tr>
+                    <td>Hectomet: </td>
+                    <td><input type="text" name="hm" id="hm" onkeyup="xlhm()" value="0"> Hm</td>
+                </tr>
+                <tr>
+                    <td>Decamet: </td>
+                    <td><input type="text" name="dam" id="dam" onkeyup="xldam()" value="0"> Dam</td>
+                </tr>
+                <tr>
+                    <td>Met: </td>
+                    <td><input type="text" name="m" id="m" onkeyup="xlm()" value="0"> M</td>
+                </tr>
+                <tr>
+                    <td>Decimet: </td>
+                    <td><input type="text" name="dm" id="dm" onkeyup="xldm()" value="0"> Dm</td>
+                </tr>
+                <tr>
+                    <td>Centimet: </td>
+                    <td><input type="text" name="cm" id="cm" onkeyup="xlcm()" value="0"> Cm</td>
+                </tr>
+                <tr>               
+                    <td>Milimet: </td>
+                    <td><input type="text" name="mm" id="mm" onkeyup="xlmm()" value="0"> Mm</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left"><font color="red"><b>Đổi vận tốc: </b></font></td>
+                </tr>
+                <tr>
+                    <td>mét/giây</td>
+                    <td><input type="text" name="ms" id="ms" onkeyup="xlms()" value="0"> m/s</td>
+                </tr>
+                <tr>
+                    <td>mét/phút</td>
+                    <td><input type="text" name="mph" id="mph" onkeyup="xlmph()" value="0"> m/ph</td>
+                </tr>
+                <tr>
+                    <td>Kilomet/giờ</td>
+                    <td><input type="text" name="kmh" id="kmh" onkeyup="xlkmh()" value="0"> km/h</td>
+                </tr>
+                <tr>
+                    <td>Kilomet/giây</td>
+                    <td><input type="text" name="kms" id="kms" onkeyup="xlkms()" value="0"> km/s</td> 
+                </tr>
+                <tr>
+                    <td>Centimet/giây</td>
+                    <td><input type="text" name="cms" id="cms" onkeyup="xlcms()" value="0"> cm/s</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <h2>Chủ Đề Thiên Văn</h2>
+        <p>Lớp: CP2196J07</p>
+        <p>Nhóm thực hiện</p>
+        <p><i>Trịnh Hoàng Duy</i></p>
+        <p><i>Lý Minh Nghĩa</i></p>
+        <p><i>Trương Thượng Hoài Nghĩa</i></p>
+    </footer>
+</body>
+</html>

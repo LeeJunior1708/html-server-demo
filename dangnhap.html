@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dangnhap.css">
+    <link rel="stylesheet" href="dinhcss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Đăng nhập</title>
+    <script>
+        function dn(){
+            var name = document.getElementById("name");
+            if(name.value =="")
+            {
+                alert("Vui lòng nhập họ tên và không quá 30 kí tự.");
+                name.focus();
+                return;
+            }
+            var pass=document.getElementById("pwd");
+            if(pass.value =="")
+            {
+                alert("Mật khẩu không được bỏ trống.");
+                pass.focus();
+                return;
+            }
+            var name=document.getElementById("name").value;
+            var pwd=document.getElementById("pwd").value;
+            var ktname=localStorage.getItem("username");
+            var ktpwd=localStorage.getItem("password");
+            if(name==ktname && pwd==ktpwd) alert("Đăng nhập thành công");
+            else alert("Đăng nhập thất bại!!");
+        }
+        function xulimenu(){
+            if (document.getElementById("menu").style.display=="block"){
+                document.getElementById("menu").style.display="none";
+                
+            }
+            else {
+                document.getElementById("menu").style.display="block";
+            }
+        }
+    </script>
+</head>
+<body id="layout-dn">
+    <div class="divmenu">
+        <div><img src="cusc.png" alt=""></div>
+        <div>
+        <div class="mini" id="mini"><input type="button" value="&#8801;" id="btnmenu" onclick="xulimenu()"></div>
+        <div id="menu">
+            <ul class="menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><font color="white">Giới thiệu</font>
+                    <ul class="sub-menu">
+                        <li><a href="web.html">Về Website</a></li>
+                        <li><a href="team.html">Về team kiến tạo</a></li>
+                    </ul>
+                </li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><font color="white">Nội dung</font>
+                    <ul class="sub-menu">
+                        <li><a href="bigbang.html">Vụ Nổ Big Bang</a></li>
+                        <li><a href="hoden.html">Hố Đen Vũ Trụ</a></li>
+                        <li><a href="cucquang.html">Cực Quang</a></li>
+                        <li><a href="saobang.html">Sao Băng</a></li>
+                        <li><a href="nhatthuc.html">Nhật Thực</a></li>
+                        <li><a href="nguyetthuc.html">Nguyệt Thực</a></li>
+                    </ul>
+                </li>
+                <li><a href="gopy.html">Góp ý</a></li>
+                <li><a href="game.html" target="blank">Giải trí</a></li>
+                <li><font color="white">Công cụ</font>
+                    <ul class="sub-menu">
+                        <li><a href="maytinh.html">Máy tính</a></li>
+                        <li><a href="doidonvi.html">Đổi đơn vị</a></li>
+                    </ul>
+                </li>
+                <li id="now"><a href="dk.html">Đăng kí/Đăng nhập</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>ĐĂNG NHẬP</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="txtname">Tên đăng nhập:</label>
+                <input type="text" class="form-control" id="name" placeholder="Hãy nhập tên" name="name">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Hãy nhập password" name="pwd">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember">Lưu mật khẩu</label>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="dn()">ĐĂNG NHẬP</button>
+            <div>
+                <hr>
+                <p>Chưa có tài khoản?</p>
+                <a href="dk.html">Đăng ký ngay</a>
+            </div>
+        </form>
+        </div>
+    <div class="clear"></div>
+    <footer>
+        <h2>Chủ Đề Thiên Văn</h2>
+        <p>Lớp: CP2196J07</p>
+        <p>Nhóm thực hiện</p>
+        <p><i>Trịnh Hoàng Duy</i></p>
+        <p><i>Lý Minh Nghĩa</i></p>
+        <p><i>Trương Thượng Hoài Nghĩa</i></p>
+    </footer>
+</body>
+</html>

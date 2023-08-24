@@ -1,0 +1,161 @@
+/* Extra small devices (phones, 600px and down) */
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 1300px auto;
+        background-attachment: fixed;
+    }
+    /*------------------------*/
+    .main {
+        text-align: center;
+    }
+    
+    table {
+        display: inline-block;
+        margin-top: 10px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: left;
+    }
+    table input{
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    /*---------------*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 2000px auto;
+        background-attachment: fixed;
+    }
+    /*------------------------*/
+    .main {
+        text-align: center;
+    }
+    
+    table {
+        display: inline-block;
+        margin-top: 10px;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: left;
+    }
+    table input{
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    /*---------------*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 2000px auto;
+        background-attachment: fixed;
+    }
+    /*------------------------*/
+    .main {
+        text-align: center;
+    }
+    
+    table {
+        display: inline-block;
+        margin-top: 10px;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: left;
+    }
+    table input{
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    /*---------------*/
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 2200px auto;
+        background-attachment: fixed;
+    }
+    /*------------------------*/
+    .main {
+        text-align: center;
+    }
+    
+    table {
+        display: inline-block;
+        margin-top: 10px;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: left;
+    }
+    table input{
+        width: 100px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    /*---------------*/
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+/*---------------------------------*/
+body{
+    background-image: url(nen.png);
+    background-repeat:round;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+/*------------------------*/
+.main {
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+    margin-top: 10px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+table input{
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+/*---------------*/
+}

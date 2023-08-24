@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dk.css">
+    <link rel="stylesheet" href="dinhcss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Đăng kí</title>
+    <script>
+        function dk(){
+            var name = document.getElementById("name");
+            if(name.value =="")
+            {
+                alert("Vui lòng nhập họ tên và không quá 30 kí tự.");
+                name.focus();
+                return;
+            }
+            var email = document.getElementById("email");
+            if(email.value =="")
+            {
+                alert("Email không được trống.");
+                email.focus();
+                return;
+            }
+            var pwd = document.getElementById("pwd");
+            if(pwd.value =="")
+            {
+                alert("Password không được bỏ trống.");
+                pwd.focus();
+                return;
+            }
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var pwd=document.getElementById("pwd").value;
+            localStorage.setItem("username",name);
+            localStorage.setItem("email",email);
+            localStorage.setItem("password",pwd);
+            if(name!="" && email !="" && pwd!="") alert("Đăng ký thành công");
+            else alert("Đăng ký thất bại!!");
+        }
+        function xulimenu(){
+            if (document.getElementById("menu").style.display=="block"){
+                document.getElementById("menu").style.display="none";
+                
+            }
+            else {
+                document.getElementById("menu").style.display="block";
+            }
+        }
+    </script>
+</head>
+<body id="layout-dk">
+    <div class="divmenu">
+        <div><img src="cusc.png" alt=""></div>
+        <div>
+        <div class="mini"><input type="button" value="&#8801;" id="btnmenu" onclick="xulimenu()"></div>
+        <div id="menu">
+            <ul class="menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><font color="white">Giới thiệu</font>
+                    <ul class="sub-menu">
+                        <li><a href="web.html">Về Website</a></li>
+                        <li><a href="team.html">Về team kiến tạo</a></li>
+                    </ul>
+                </li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><font color="white">Nội dung</font>
+                    <ul class="sub-menu">
+                        <li><a href="bigbang.html">Vụ Nổ Big Bang</a></li>
+                        <li><a href="hoden.html">Hố Đen Vũ Trụ</a></li>
+                        <li><a href="cucquang.html">Cực Quang</a></li>
+                        <li><a href="saobang.html">Sao Băng</a></li>
+                        <li><a href="nhatthuc.html">Nhật Thực</a></li>
+                        <li><a href="nguyetthuc.html">Nguyệt Thực</a></li>
+                    </ul>
+                </li>
+                <li><a href="gopy.html">Góp ý</a></li>
+                <li><a href="game.html" target="blank">Giải trí</a></li>
+                <li><font color="white">Công cụ</font>
+                    <ul class="sub-menu">
+                        <li><a href="maytinh.html">Máy tính</a></li>
+                        <li><a href="doidonvi.html">Đổi đơn vị</a></li>
+                    </ul>
+                </li>
+                <li id="now"><a href="dk.html">Đăng kí/Đăng nhập</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>ĐĂNG KÝ</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="txtname">Tên đăng ký:</label>
+                <input type="text" class="form-control" id="name" placeholder="Hãy nhập tên" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Hãy nhập email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Hãy nhập password" name="pwd">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="dk()">ĐĂNG KÝ</button>
+            <div>
+                <hr>
+                <p>Đã có tài khoản?</p>
+                <a href="dangnhap.html">Đăng nhập ngay</a>
+            </div>
+        </form>
+        </div>
+    <div class="clear"></div>
+    <footer>
+        <h2>Chủ Đề Thiên Văn</h2>
+        <p>Lớp: CP2196J07</p>
+        <p>Nhóm thực hiện</p>
+        <p><i>Trịnh Hoàng Duy</i></p>
+        <p><i>Lý Minh Nghĩa</i></p>
+        <p><i>Trương Thượng Hoài Nghĩa</i></p>
+    </footer>
+</body>
+</html>
+8"
+20.32 cm

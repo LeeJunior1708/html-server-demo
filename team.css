@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   /* background-color: #2b2b2b;*/
+   background-image: url(nen.png);
+    font-family: "Poppins", sans-serif;
+  }
+  
+.container{
+    margin: 20px 40px;
+    color: white;
+}
+  
+.title{
+    font-size: 40px;
+    color: #cf81fc;
+
+}
+  
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 90px;
+}
+  
+.profile{
+    text-align: center;
+    padding: 10px;
+    flex-basis: 290px;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.profile a{
+    text-decoration: none;
+    color: rgb(112, 112, 247);
+}
+  
+.profile .profile-img{
+    display: inline;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+   /* filter: grayscale(100%);*/
+    cursor: pointer;
+    transition: 400ms;
+}
+  
+.member{
+    margin-top: 30px;
+    font-size: 35px;
+}
+  
+.profile h5{
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+}
+  
+.profile p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}

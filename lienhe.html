@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Liên hệ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="lienhe.css"/>
+    <link rel="stylesheet" type="text/css" href="dinhcss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function gui(){
+            var name = document.getElementById("name");
+            if(name.value =="")
+            {
+                alert("Vui lòng nhập họ tên và không quá 30 kí tự.");
+                name.focus();
+                return;
+            }
+            var pass = document.getElementById("pwd");
+            if(pass.value =="")
+            {
+                alert("Password không được bỏ trống.");
+                pass.focus();
+                return;
+            }
+            var loinhan = document.getElementById("loinhan");
+            if(loinhan.value =="")
+            {
+                alert("Bạn chưa nhập phần góp ý.");
+                loinhan.focus();
+                return;
+            }
+        }
+        function xulimenu(){
+            if (document.getElementById("menu").style.display=="block"){
+                document.getElementById("menu").style.display="none";
+                
+            }
+            else {
+                document.getElementById("menu").style.display="block";
+            }
+        }
+    </script>
+</head>
+<body id="layout-lienhe">
+    <div class="divmenu">
+        <div><img src="cusc.png" alt=""></div>
+        <div>
+        <div class="mini" id="mini"><input type="button" value="&#8801;" id="btnmenu" onclick="xulimenu()"></div>
+        <div id="menu">
+            <ul class="menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><font color="white">Giới thiệu</font>
+                    <ul class="sub-menu">
+                        <li><a href="web.html">Về Website</a></li>
+                        <li><a href="team.html">Về team kiến tạo</a></li>
+                    </ul>
+                </li>
+                <li id="now"><a href="lienhe.html">Liên hệ</a></li>
+                <li><font color="white">Nội dung</font>
+                    <ul class="sub-menu">
+                        <li><a href="bigbang.html">Vụ Nổ Big Bang</a></li>
+                        <li><a href="hoden.html">Hố Đen Vũ Trụ</a></li>
+                        <li><a href="cucquang.html">Cực Quang</a></li>
+                        <li><a href="saobang.html">Sao Băng</a></li>
+                        <li><a href="nhatthuc.html">Nhật Thực</a></li>
+                        <li><a href="nguyetthuc.html">Nguyệt Thực</a></li>
+                    </ul>
+                </li>
+                <li><a href="gopy.html">Góp ý</a></li>
+                <li><a href="game.html" target="blank">Giải trí</a></li>
+                <li><font color="white">Công cụ</font>
+                    <ul class="sub-menu">
+                        <li><a href="maytinh.html">Máy tính</a></li>
+                        <li><a href="doidonvi.html">Đổi đơn vị</a></li>
+                    </ul>
+                </li>
+                <li><a href="dk.html">Đăng kí/Đăng nhập</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <form action="/action_page.php">
+        <h2>LIÊN HỆ</h2>
+        <div class="form-group">
+            <label for="name">Tên:</label>
+            <input type="text" class="form-control" id="name" placeholder="Hãy nhập tên" name="name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Hãy nhập email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Mật khẩu:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Hãy nhập mật khẩu mail" name="pwd">
+        </div>
+        <div class="form-group">
+            <label for="gopy">Lời nhắn:</label>
+            <textarea name="loinhan" class="form-control" id="loinhan" cols="30" rows="3"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" onclick="gui()">Gửi</button>
+        </div>
+        </form>      
+    </div>
+    <div class="container2">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31392.234448675514!2d104.99285885302125!3d10.419247082390795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109f84786c520a7%3A0x8fef7fdeaf551541!2zdHQuIFRyaSBUw7RuLCBUcmkgVMO0biwgQW4gR2lhbmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1641831368446!5m2!1svi!2s" width="100%" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>  
+    <div class="clear"></div>
+    <footer>
+        <h2>Chủ Đề Thiên Văn</h2>
+        <p>Lớp: CP2196J07</p>
+        <p>Nhóm thực hiện</p>
+        <p><i>Trịnh Hoàng Duy</i></p>
+        <p><i>Lý Minh Nghĩa</i></p>
+        <p><i>Trương Thượng Hoài Nghĩa</i></p>
+    </footer>
+</body>            
+</html>

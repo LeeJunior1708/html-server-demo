@@ -1,0 +1,215 @@
+/* Extra small devices (phones, 600px and down) */
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 1300px auto;
+        background-attachment: fixed;
+    }
+ /*------------------------*/
+ .container{
+    text-align: center;
+}
+table {
+    display: inline-block;
+        margin-top: 10px;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+    table input{
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+    }
+    table textarea{
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+    }
+    .btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+    }
+
+    /*---------------*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 2000px auto;
+        background-attachment: fixed;
+    }
+    /*------------------------*/
+    .container{
+        text-align: center;
+    }
+    table {
+        display: inline-block;
+        margin-top: 10px;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+    table input{
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+    }
+    table textarea{
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+    }
+    .btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+    }
+
+    /*---------------*/
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 2000px auto;
+        background-attachment: fixed;
+    }
+    /*------------------------*/
+    .container{
+        text-align: center;
+    }
+    table {
+        display: inline-block;
+        margin-top: 10px;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+    }
+    table input{
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+    }
+    table textarea{
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+    }
+    .btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+    }
+    /*---------------*/
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-image: url(nen.png);
+        background-repeat: no-repeat;
+        background-size: 2200px auto;
+        background-attachment: fixed;
+    }
+    /*------------------------*/
+    .container{
+        text-align: center;
+    }
+    table {
+        display: inline-block;
+        margin-top: 10px;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.671);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: left;
+    }
+    table td{
+        padding: 10px;
+    }
+    table input{
+        width: 500px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+        font-size: 20px;
+    }
+    table textarea{
+        width: 700px;
+        background-color: rgba(0, 0, 0, 0.623);
+        color: white;
+        font-size: 20px;
+    }
+    .btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+    }
+    /*---------------*/
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+/*---------------------------------*/
+body{
+    background-image: url(nen.png);
+    background-repeat:round;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+/*------------------------*/
+.container{
+    text-align: center;
+}
+table {
+    display: inline-block;
+    margin-top: 10px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+table td{
+    padding: 10px;
+}
+table input{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    font-size: 20px;
+}
+table textarea{
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: white;
+    font-size: 20px;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+/*---------------*/
+}
